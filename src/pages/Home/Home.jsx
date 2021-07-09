@@ -2,13 +2,14 @@ import { useContext } from "react";
 import { Container } from "./home"
 import { ThemeContext } from 'styled-components'
 import { shade } from "polished";
+import { useNavigate } from "react-router-dom";
 import Switch from 'react-switch'
 import avatar from '../../assets/images/avatar.jpg'
 
 
 export function Home({ toggleTheme }){
     const { title } = useContext(ThemeContext)
-    
+    const navigate = useNavigate()
 
     return(
         <Container> 
@@ -31,9 +32,17 @@ export function Home({ toggleTheme }){
                 />
                 <nav>
                     <ul>
-                        <button>
+                        <button
+                            onClick={() => navigate('/dashboard')}
+                        >
                             <li>Home</li>
+                        </button>
+
+                        <button>    
                             <li>Porfolio</li>
+                        </button>
+
+                        <button>
                             <li>Orçamentos</li>
                         </button>
                     </ul>

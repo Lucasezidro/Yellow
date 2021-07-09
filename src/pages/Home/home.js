@@ -38,6 +38,7 @@ export const Container = styled.header`
                     list-style: none;
                     color: ${props => props.theme.colors.text};
                     opacity: .7;
+                    margin-left: 20px;
                     transition: all 0.6s;
 
                     &:hover{

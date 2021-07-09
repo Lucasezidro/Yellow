@@ -10,3 +10,11 @@
   <img src="https://user-images.githubusercontent.com/80000943/124985342-ac50b100-e010-11eb-8c94-180b93e2f9c2.jpeg" width="600px"/>
 </div>
 
+# Tecnologias utilizadas
+
+- React JS
+- React-Router-Dom 6.0.0 beta 
+- React Switch
+- Styled Component
+
+
